@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhvv46iqsu8tr"]
+
+[ext_resource type="Texture2D" uid="uid://c0vb8vkau0lry" path="res://sprites/nature tileset/store/1-full.png" id="1_jfufd"]
+[ext_resource type="Script" path="res://main_scene.gd" id="1_nr47h"]
+[ext_resource type="PackedScene" uid="uid://cdspqyyh0pqvy" path="res://player.tscn" id="3_fjpbd"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_nr47h")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(2.395, 2.695)
+texture = ExtResource("1_jfufd")
+centered = false
+
+[node name="Player" parent="." instance=ExtResource("3_fjpbd")]
+position = Vector2(56, 469)
+scale = Vector2(0.268, 0.268)
