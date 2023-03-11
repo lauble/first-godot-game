@@ -1,17 +1,69 @@
-[gd_scene load_steps=4 format=3 uid="uid://dhvv46iqsu8tr"]
+[gd_scene load_steps=5 format=3 uid="uid://dhvv46iqsu8tr"]
 
-[ext_resource type="Texture2D" uid="uid://c0vb8vkau0lry" path="res://sprites/nature tileset/store/1-full.png" id="1_jfufd"]
 [ext_resource type="Script" path="res://main_scene.gd" id="1_nr47h"]
+[ext_resource type="Texture2D" uid="uid://cgibe35ddcmvi" path="res://sprites/nature tileset/store/4-bg-mountain.png" id="2_b0pxw"]
 [ext_resource type="PackedScene" uid="uid://cdspqyyh0pqvy" path="res://player.tscn" id="3_fjpbd"]
+[ext_resource type="PackedScene" uid="uid://cci8ye4lxkt5k" path="res://tile.tscn" id="3_kgtht"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_nr47h")
 
-[node name="Sprite" type="Sprite2D" parent="."]
-scale = Vector2(2.395, 2.695)
-texture = ExtResource("1_jfufd")
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(2.4, 2.7)
+texture = ExtResource("2_b0pxw")
 centered = false
 
 [node name="Player" parent="." instance=ExtResource("3_fjpbd")]
-position = Vector2(56, 469)
-scale = Vector2(0.268, 0.268)
+position = Vector2(72, 568)
+scale = Vector2(0.26, 0.26)
+
+[node name="Tile" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(72, 1016)
+
+[node name="Tile2" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(208, 1016)
+
+[node name="Tile3" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(344, 1016)
+
+[node name="Tile4" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(480, 1016)
+
+[node name="Tile5" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(616, 1016)
+
+[node name="Tile6" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(752, 1016)
+
+[node name="Tile7" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(888, 1016)
+
+[node name="Tile8" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1024, 1016)
+
+[node name="Tile9" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1160, 1016)
+
+[node name="Tile10" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1296, 1016)
+
+[node name="Tile11" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(72, 792)
+
+[node name="Tile12" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(576, 736)
+
+[node name="Tile16" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(880, 640)
+
+[node name="Tile17" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1152, 512)
+
+[node name="Tile13" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1608, 1016)
+
+[node name="Tile14" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1728, 1016)
+
+[node name="Tile15" parent="." instance=ExtResource("3_kgtht")]
+position = Vector2(1856, 1016)

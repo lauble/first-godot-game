@@ -1,10 +1,150 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdspqyyh0pqvy"]
+[gd_scene load_steps=32 format=3 uid="uid://cdspqyyh0pqvy"]
 
 [ext_resource type="Texture2D" uid="uid://sv7y4bf6lb8t" path="res://sprites/adventure-girl/Idle (1).png" id="1_nxqfb"]
 [ext_resource type="Script" path="res://player.gd" id="1_pc5ws"]
+[ext_resource type="Texture2D" uid="uid://dmnmcxfypk1hb" path="res://sprites/adventure-girl/Idle (2).png" id="3_rdkn6"]
+[ext_resource type="Texture2D" uid="uid://cd0y77v8agju3" path="res://sprites/adventure-girl/Idle (3).png" id="4_ljc05"]
+[ext_resource type="Texture2D" uid="uid://c8gdemwq3ulqq" path="res://sprites/adventure-girl/Idle (4).png" id="5_ke23a"]
+[ext_resource type="Texture2D" uid="uid://cad58ihamlw3l" path="res://sprites/adventure-girl/Idle (5).png" id="6_pb7wv"]
+[ext_resource type="Texture2D" uid="uid://cbo6n0o4rihp7" path="res://sprites/adventure-girl/Idle (6).png" id="7_wwk8s"]
+[ext_resource type="Texture2D" uid="uid://dwth6hm1mrr4g" path="res://sprites/adventure-girl/Idle (7).png" id="8_add1n"]
+[ext_resource type="Texture2D" uid="uid://br2n8c3bhimg5" path="res://sprites/adventure-girl/Idle (8).png" id="9_p10c4"]
+[ext_resource type="Texture2D" uid="uid://jwe0862k33fx" path="res://sprites/adventure-girl/Idle (9).png" id="10_obaiv"]
+[ext_resource type="Texture2D" uid="uid://be77pin36r1nt" path="res://sprites/adventure-girl/Idle (10).png" id="11_rw1g2"]
+[ext_resource type="Texture2D" uid="uid://clvi1jogicjyr" path="res://sprites/adventure-girl/Jump (1).png" id="12_yjayl"]
+[ext_resource type="Texture2D" uid="uid://ba5na73as1j8t" path="res://sprites/adventure-girl/Jump (2).png" id="13_wapug"]
+[ext_resource type="Texture2D" uid="uid://ddm0qrl0wefh7" path="res://sprites/adventure-girl/Jump (3).png" id="14_hlqbv"]
+[ext_resource type="Texture2D" uid="uid://b1li0tvf20n5u" path="res://sprites/adventure-girl/Jump (4).png" id="15_sq5cv"]
+[ext_resource type="Texture2D" uid="uid://ciw3kl8vueo7i" path="res://sprites/adventure-girl/Jump (5).png" id="16_idybk"]
+[ext_resource type="Texture2D" uid="uid://b8rqnc1xujmsh" path="res://sprites/adventure-girl/Jump (6).png" id="17_l3yn6"]
+[ext_resource type="Texture2D" uid="uid://bnc06my3dy065" path="res://sprites/adventure-girl/Jump (7).png" id="18_vor5i"]
+[ext_resource type="Texture2D" uid="uid://4y6nevb6pvlb" path="res://sprites/adventure-girl/Jump (8).png" id="19_up6ei"]
+[ext_resource type="Texture2D" uid="uid://bsnqocuyl1tqe" path="res://sprites/adventure-girl/Jump (9).png" id="20_fmqhb"]
+[ext_resource type="Texture2D" uid="uid://cjryve0bhylx4" path="res://sprites/adventure-girl/Jump (10).png" id="21_dauty"]
+[ext_resource type="Texture2D" uid="uid://c6dtqt0ka2om7" path="res://sprites/adventure-girl/Run (1).png" id="22_yiawa"]
+[ext_resource type="Texture2D" uid="uid://bciwr8627pv8a" path="res://sprites/adventure-girl/Run (2).png" id="23_wtfim"]
+[ext_resource type="Texture2D" uid="uid://r6q1luo2e0v3" path="res://sprites/adventure-girl/Run (3).png" id="24_nmghu"]
+[ext_resource type="Texture2D" uid="uid://bnaoah3olgcuy" path="res://sprites/adventure-girl/Run (4).png" id="25_kmnww"]
+[ext_resource type="Texture2D" uid="uid://bcm4uqxla4tpy" path="res://sprites/adventure-girl/Run (5).png" id="26_vgaxh"]
+[ext_resource type="Texture2D" uid="uid://da475nclxju1y" path="res://sprites/adventure-girl/Run (6).png" id="27_wr8fr"]
+[ext_resource type="Texture2D" uid="uid://bha7yy34sjxvx" path="res://sprites/adventure-girl/Run (7).png" id="28_ouq1g"]
+[ext_resource type="Texture2D" uid="uid://50fd0x2sdra4" path="res://sprites/adventure-girl/Run (8).png" id="29_tdcpt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gs6m4"]
+size = Vector2(312.5, 496)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j3aqj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nxqfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rdkn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ljc05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ke23a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pb7wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wwk8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_add1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_p10c4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_obaiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rw1g2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_yjayl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wapug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hlqbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_sq5cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_idybk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_l3yn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vor5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_up6ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fmqhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_dauty")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_yiawa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_wtfim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_nmghu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_kmnww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vgaxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wr8fr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ouq1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tdcpt")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_pc5ws")
 
 [node name="Sprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_nxqfb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-48, -2)
+shape = SubResource("RectangleShape2D_gs6m4")
+
+[node name="AnimationPlayer" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j3aqj")
+animation = &"jump"
+frame_progress = 0.892544
