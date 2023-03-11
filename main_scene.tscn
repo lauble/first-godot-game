@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhvv46iqsu8tr"]
+[gd_scene load_steps=7 format=3 uid="uid://dhvv46iqsu8tr"]
 
 [ext_resource type="Script" path="res://main_scene.gd" id="1_nr47h"]
 [ext_resource type="Texture2D" uid="uid://cgibe35ddcmvi" path="res://sprites/nature tileset/store/4-bg-mountain.png" id="2_b0pxw"]
 [ext_resource type="PackedScene" uid="uid://cdspqyyh0pqvy" path="res://player.tscn" id="3_fjpbd"]
 [ext_resource type="PackedScene" uid="uid://cci8ye4lxkt5k" path="res://tile.tscn" id="3_kgtht"]
+[ext_resource type="PackedScene" uid="uid://ea0swfcm0oui" path="res://apple.tscn" id="5_a7ptj"]
+[ext_resource type="PackedScene" uid="uid://b63apu7jydcya" path="res://milk_carton.tscn" id="6_kwdns"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_nr47h")
@@ -67,3 +69,15 @@ position = Vector2(1728, 1016)
 
 [node name="Tile15" parent="." instance=ExtResource("3_kgtht")]
 position = Vector2(1856, 1016)
+
+[node name="Apple" parent="." instance=ExtResource("5_a7ptj")]
+position = Vector2(576, 440)
+scale = Vector2(0.238, 0.238)
+
+[node name="Apple2" parent="." instance=ExtResource("5_a7ptj")]
+position = Vector2(872, 344)
+scale = Vector2(0.238, 0.238)
+
+[node name="MilkCarton" parent="." instance=ExtResource("6_kwdns")]
+position = Vector2(1144, 144)
+scale = Vector2(0.296, 0.296)

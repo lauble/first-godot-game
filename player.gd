@@ -7,7 +7,6 @@ var speed : int = 300
 var jumpForce : int = 600
 var gravity : int = 800
 
-# @onready var sprite : Sprite2D = get_node("Sprite")
 @onready var _animated_sprite : AnimatedSprite2D = get_node("AnimatedSprite")
 
 func _physics_process(delta):
@@ -17,8 +16,6 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	
 	# actions
-	#if not is_on_floor():
-		#_animated_sprite.play("jump")
 	if Input.is_action_pressed("ui_left"):
 		velocity.x -= speed
 		_animated_sprite.play("run")

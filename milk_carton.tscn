@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b63apu7jydcya"]
+
+[ext_resource type="Script" path="res://milk_carton.gd" id="1_mgv8d"]
+[ext_resource type="Texture2D" uid="uid://cads4rgmvdycp" path="res://sprites/match 3/characters/characters_0001.png" id="1_wgv2r"]
+
+[sub_resource type="GDScript" id="GDScript_qq0k3"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="MilkCarton" type="Node2D"]
+script = ExtResource("1_mgv8d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wgv2r")
+script = SubResource("GDScript_qq0k3")
