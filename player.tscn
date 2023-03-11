@@ -33,7 +33,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gs6m4"]
 size = Vector2(312.5, 496)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_j3aqj"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_lyp1n"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -103,7 +103,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -132,7 +132,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
@@ -144,7 +144,6 @@ script = ExtResource("1_pc5ws")
 position = Vector2(-48, -2)
 shape = SubResource("RectangleShape2D_gs6m4")
 
-[node name="AnimationPlayer" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_j3aqj")
-animation = &"jump"
-frame_progress = 0.892544
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lyp1n")
+animation = &"run"
