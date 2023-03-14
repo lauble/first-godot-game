@@ -1,7 +1,7 @@
-## Inspiration
+### Inspiration
 I was inspired by MLH's GHW: Social Good Week. This is the beginning of a project that "gameifies" recycling!
 
-## More to come
+### More to come
 This is a work in progress as I figure out how to navigate Godot.
 
 ### Screenshots
